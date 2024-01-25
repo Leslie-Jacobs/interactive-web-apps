@@ -1,4 +1,4 @@
-const date = 2050  //could not define variables as colon was implemented, (=) operator is used to assign valuables
+const date = 2050  //could not define valuables as colon was implemented, (=) operator is used to assign valuables
 const status = "student"
 let count = 0 
 
