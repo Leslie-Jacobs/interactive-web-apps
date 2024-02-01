@@ -1,5 +1,5 @@
 const date = 2050  //inserted equal operator to declare const variable date and assign it to the value of 2050
-let status = "student"
+let status_1 = "student"
 let count = 0 
  
 if (date == 2050) {   //if statement starts checking if date is equal to 2050, used comparison operator to check valuables
@@ -19,11 +19,11 @@ if (date == 2050) {   //if statement starts checking if date is equal to 2050, u
 	console.log('August', 'Women’s Day')
 	console.log('September', 'Heritage Day')
 	  
-	date = 'December' /
+	date = 'December' 
 	console.log(date, 'Day of Reconciliation')
 	count += 3
 
-	if (status == "parent") { //if status is true, info should print out  december holidays
+	if (status == "parent") { //if status is true, info should print out  status is parent
 	  console.log(date, 'Christmas Day')
 		count += 1
   }
