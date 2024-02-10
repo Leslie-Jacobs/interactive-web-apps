@@ -43,6 +43,6 @@ const sarah = {
 			postalCode: sarahPostal,
   }
 }
-//displays leo and sarah objects with postal codes
+//displays leo and sarah objects with postal codes,removed bracket notation
 console.log(leo,leo.address.postalCode);
 console.log(sarah,sarah.address.postalCode);
