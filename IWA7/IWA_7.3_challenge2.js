@@ -11,4 +11,4 @@ console.log(greeting)
 /*the below output will result in a string instead either 
 displaying  correct name (nickname or firstName) or if neither is present, it only displays "Good morning."*/
 
-//console.log("Good Morning, ${nickName} || {firstName}!")
+//console.log(Good Morning, ${nickName} || ${firstName}!`)
