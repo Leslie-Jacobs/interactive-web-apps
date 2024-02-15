@@ -6,8 +6,8 @@ const size = 'large'
 // Only change the syntax below (not the values or key names)
 
 const expenses = {
-    'food': 51.7501,
-    'transport':  10.2,
+    food: 51.7501,
+    transport:  10.2,
 };
   
 const tax = {
@@ -30,9 +30,19 @@ const rent = {
 
 // You can change below however you want
 
-const taxAsDecimal = parseFloat(tax[913]) / 100 //converts tax percentages to decimals
+//converts tax percentages to decimals
+const taxAsDecimal = parseFloat(tax[913]) / 100 
 const startingAfterTax = salary * (1 - taxAsDecimal)
-const type = `${size}-${lodging}`// Create a key for rent with lodging and size variables
-const rentTotal = rent[type] //use key amount to get total
+
+/**
+ * Create a key for rent with lodging and size variables
+ * used template literal and subtracted instead of adding.
+ * */
+const type = `${size}-${lodging}`
+
+//use key amount to get total
+const rentTotal = rent[type] 
 const balance = startingAfterTax - (expenses.transport + expenses.food + rent[type])
-console.log(balance.toFixed(2))// displays amount rounded off to 2 decimal places
+
+// displays amount rounded off to 2 decimal places
+console.log(balance.toFixed(2))
