@@ -46,3 +46,4 @@ const balance = startingAfterTax - (expenses.transport + expenses.food + rent[ty
 
 // displays amount rounded off to 2 decimal places
 console.log(balance.toFixed(2))
+ 
