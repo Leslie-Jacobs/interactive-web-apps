@@ -14,10 +14,10 @@ const order1_Donuts = order1_Root.querySelector('.donuts .count');
 const order1_Pancakes = order1_Root.querySelector('.pancakes .count');
 const order1_Status = order1_Root.querySelector('.status dd');
 
-order1_Biscuits.textContent = order1_Root.getAttribute('data-biscuits');
-order1_Donuts.textContent = order1_Root.getAttribute('data-donuts');
-order1_Pancakes.textContent = order1_Root.getAttribute('data-pancakes');
-order1_Status.textContent = order1_Root.getAttribute('data-delivered') === 'true' ? 'Delivered' : 'Pending';
+order1_Biscuits.innerText = order1_Root.getAttribute('data-biscuits');
+order1_Donuts.innerText = order1_Root.getAttribute('data-donuts');
+order1_Pancakes.innerText = order1_Root.getAttribute('data-pancakes');
+order1_Status.innerText = order1_Root.getAttribute('data-delivered') === 'true' ? 'Delivered' : 'Pending';
 
 //2nd Order
 
@@ -27,10 +27,10 @@ const order2_Donuts = order2_Root.querySelector('.donuts .count');
 const order2_Pancakes = order2_Root.querySelector('.pancakes .count');
 const order2_Status = order2_Root.querySelector('.status dd');
 
-order2_Biscuits.textContent = order2_Root.getAttribute('data-biscuits');
-order2_Donuts.textContent = order2_Root.getAttribute('data-donuts');
-order2_Pancakes.textContent = order2_Root.getAttribute('data-pancakes');
-order2_Status.textContent = order2_Root.getAttribute('data-delivered') === 'true' ? 'Delivered' : 'Pending';
+order2_Biscuits.innerText = order2_Root.getAttribute('data-biscuits');
+order2_Donuts.innerText = order2_Root.getAttribute('data-donuts');
+order2_Pancakes.innerText = order2_Root.getAttribute('data-pancakes');
+order2_Status.innerText = order2_Root.getAttribute('data-delivered') === 'true' ? 'Delivered' : 'Pending';
 
 
 // 3rd Order
@@ -41,8 +41,8 @@ const order3_Donuts = order3_Root.querySelector('.donuts .count');
 const order3_Pancakes = order3_Root.querySelector('.pancakes .count');
 const order3_Status = order3_Root.querySelector('.status dd');
 
-order3_Biscuits.textContent = order3_Root.getAttribute('data-biscuits');
-order3_Donuts.textContent = order3_Root.getAttribute('data-donuts');
-order3_Pancakes.textContent = order3_Root.getAttribute('data-pancakes');
-order3_Status.textContent = order3_Root.getAttribute('data-delivered') === 'true' ? 'Delivered' : 'Pending';
+order3_Biscuits.innerText = order3_Root.getAttribute('data-biscuits');
+order3_Donuts.innerText = order3_Root.getAttribute('data-donuts');
+order3_Pancakes.innerText = order3_Root.getAttribute('data-pancakes');
+order3_Status.innerText = order3_Root.getAttribute('data-delivered') === 'true' ? 'Delivered' : 'Pending';
 
