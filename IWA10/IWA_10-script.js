@@ -63,7 +63,7 @@ if (holidays[9]) {
 const copied = { ...holidays };
 
 copied[6].name = 'X-mas';
-copied[6].date.setHours(0, 0, 0, 0); //midnight
+copied[6].date.setHours(0, 0, 0, 0); //time indicates midnight
 
 
 //if new date is earlier than current date
@@ -73,7 +73,7 @@ const newDate = new Date(copied[6].date);
 console.log(`New date is earlier: ${newDate < currentDate}`);
 
 
-//copied objects changes
+//'copied' objects changes
 console.log(`ID change: ${copied[6].id !== holidays[6].id}`);
 console.log(`Name change: ${copied[6].name !== holidays[6].name ? copied[6].name : 'X-mas'}`);
 console.log(`Date change: ${copied[6].date !== holidays[6].date.getTime() ? copied[6].date : 'false'}`);
