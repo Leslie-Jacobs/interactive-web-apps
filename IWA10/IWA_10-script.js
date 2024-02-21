@@ -96,6 +96,12 @@ const allDates = [
     holidays[7].date,
     holidays[8].date,
 ]
+/**
+ * takes each holiday object from the array and extracts the date property from it,creating a new array (holidayDates) containing only the dates.
+ * The spread operator (...) is used to spread the elements of the array allDates
+ * first holidays holds the earliest holidays
+ * last holidays holds the latest holidays
+ */
 const holidayDates = Object.values(copied).map((holiday) => holiday.date);
 const firstHoliday = new Date(Math.min(...allDates));
 const lastHoliday = new Date(Math.max(...allDates));
@@ -105,8 +111,8 @@ const lastHoliday = new Date(Math.max(...allDates));
 *converts it to a string, and pads it with '0' .
 */
 function formatDate(date) {
-    let day = date.getDate().toString().padStart(2, '0');
-    let month = (date.getMonth() + 1).toString().padStart(2, '0');
+    let day = date.getDate().toString().padStart(2, '0');//Converts the result received from getDate() into a string.
+    let month = (date.getMonth() + 1).toString().padStart(2, '0');//2 characters by padding the start of string with '0'
     let year = date.getFullYear();
     return day + '/' + month + '/' + year;
 }
