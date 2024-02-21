@@ -2,7 +2,7 @@
 // 1st Order
 
 /**
- * the attribute selector [data-key="order1"] and use the root element of Order 1 .
+ * used the attribute selector [data-key="order1"] and use the root element of Order 1 .
  * chooses specific elements within Order 1 using querySelector for each item and status.
  * get values from the data- attributes of the 'order1Root'.
  * status for each item in Order1 using 'textContext,if data-delivered true otherwise its pending
@@ -25,7 +25,7 @@ const order2_Root = document.querySelector('[data-key="order2"]');
 const order2_Biscuits = order2_Root.querySelector('.biscuits .count');
 const order2_Donuts = order2_Root.querySelector('.donuts .count');
 const order2_Pancakes = order2_Root.querySelector('.pancakes .count');
-const order2_Status = order2_Root.querySelector('.status dd');
+const order2_Status = order2_Root.querySelector('.status dd'); //element
 
 order2_Biscuits.innerText = order2_Root.getAttribute('data-biscuits');
 order2_Donuts.innerText = order2_Root.getAttribute('data-donuts');
