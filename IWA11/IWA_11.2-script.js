@@ -3,25 +3,32 @@
 
 /**
  * used the attribute selector [data-key="order1"] and use the root element of Order 1 .
- * chooses specific elements within Order 1 using querySelector for each item and status.
+ * chooses specific elements within Order 1,2,and 3 using querySelector for each item and status.
  * get values from the data- attributes of the 'order1Root'.
- * status for each item in Order1 using 'textContext,if data-delivered true otherwise its pending
+ * status for each item in Order1 using 'innerText,if data-delivered true otherwise its pending
  *  */ 
 
+//finds elements with classes like biscuits,donuts etc.
 const order1_Root = document.querySelector('[data-key="order1"]');
 const order1_Biscuits = order1_Root.querySelector('.biscuits .count');
 const order1_Donuts = order1_Root.querySelector('.donuts .count');
 const order1_Pancakes = order1_Root.querySelector('.pancakes .count');
 const order1_Status = order1_Root.querySelector('.status dd');
 
+/**
+ * These lines assign values to the innerText of the elements.
+ *  The values are taken from the data- attributes of the order1_Root element. 
+ */
 order1_Biscuits.innerText = order1_Root.getAttribute('data-biscuits');
 order1_Donuts.innerText = order1_Root.getAttribute('data-donuts');
 order1_Pancakes.innerText = order1_Root.getAttribute('data-pancakes');
+//The last line checks if the data-delivered attribute is equal to 'true', and if so, sets the inner text to 'Delivered'; otherwise, it sets it to 'Pending'.
 order1_Status.innerText = order1_Root.getAttribute('data-delivered') === 'true' ? 'Delivered' : 'Pending';
 
 //2nd Order
 
 const order2_Root = document.querySelector('[data-key="order2"]');
+
 const order2_Biscuits = order2_Root.querySelector('.biscuits .count');
 const order2_Donuts = order2_Root.querySelector('.donuts .count');
 const order2_Pancakes = order2_Root.querySelector('.pancakes .count');
