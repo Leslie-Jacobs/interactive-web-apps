@@ -4,7 +4,6 @@
 /**
  * used the attribute selector [data-key="order1"] and use the root element of Order 1 .
  * chooses specific elements within Order 1,2,and 3 using querySelector for each item and status.
- * get values from the data- attributes of the 'order1Root'.
  * status for each item in Order1 using 'innerText,if data-delivered true otherwise its pending
  *  */ 
 
